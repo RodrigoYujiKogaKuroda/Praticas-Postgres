@@ -1,0 +1,1 @@
+UPDATE produtos SET PRECO=980000 WHERE nome='Violão Lava ME 2';

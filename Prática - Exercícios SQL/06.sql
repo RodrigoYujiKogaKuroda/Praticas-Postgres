@@ -1,0 +1,1 @@
+UPDATE produtos SET PRECO=8000 WHERE nome='Pelúcia Strange Planet com Gatinho';
