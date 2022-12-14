@@ -1,9 +1,9 @@
 SELECT
-u.id,
-u.name,
-c.name AS course,
-s.name AS school,
-e."endDate"
+    u.id,
+    u.name,
+    c.name AS course,
+    s.name AS school,
+    e."endDate"
 FROM educations e
 JOIN users u
     ON u.id=30

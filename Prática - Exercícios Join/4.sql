@@ -1,9 +1,9 @@
 SELECT
-u.id,
-u.name,
-r.name AS role,
-c.name AS company,
-e."startDate"
+    u.id,
+    u.name,
+    r.name AS role,
+    c.name AS company,
+    e."startDate"
 FROM experiences e
 JOIN users u
     ON u.id=50
