@@ -1,11 +1,11 @@
 CREATE TABLE "companies" (
-	"id" serial NOT NULL,
+	"id" SERIAL PRIMARY KEY,
 	"name" TEXT NOT NULL UNIQUE,
 	"acronym" TEXT NOT NULL UNIQUE
 );
 
 CREATE TABLE "flights" (
-	"id" serial NOT NULL,
+	"id" SERIAL PRIMARY KEY,
 	"acronym" TEXT NOT NULL UNIQUE,
 	"company_id" integer NOT NULL REFERENCES "companies"("id"),
 	"departure" TIMESTAMP NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE "flights" (
 );
 
 CREATE TABLE "airports" (
-	"id" serial NOT NULL,
+	"id" SERIAL PRIMARY KEY,
 	"name" TEXT NOT NULL UNIQUE,
 	"acronym" TEXT NOT NULL UNIQUE
 );
